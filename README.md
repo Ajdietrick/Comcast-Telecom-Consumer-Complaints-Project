@@ -1,5 +1,4 @@
-Comcast Telecom Consumer Complaints .
-Project 3 
+Comcast Telecom Consumer Complaints - Project 3 
 
 DESCRIPTION
 
