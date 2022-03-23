@@ -1,27 +1,37 @@
-Customer Service Requests Analysis
-Project 1 
+Comcast Telecom Consumer Complaints .
+Project 3 
 
 DESCRIPTION
 
-Background of Problem Statement :
+Comcast is an American global telecommunication company. The firm has been providing terrible customer service. They continue to fall short despite repeated promises to improve. Only last month (October 2016) the authority fined them a $2.3 million, after receiving over 1000 consumer complaints.
+The existing database will serve as a repository of public customer complaints filed against Comcast.
+It will help to pin down what is wrong with Comcast's customer service.
 
-NYC 311's mission is to provide the public with quick and easy access to all New York City government services and information while offering the best customer service. Each day, NYC311 receives thousands of requests related to several hundred types of non-emergency services, including noise complaints, plumbing issues, and illegally parked cars. These requests are received by NYC311 and forwarded to the relevant agencies such as the police, buildings, or transportation. The agency responds to the request, addresses it, and then closes it.
+Data Dictionary
 
-Problem Objective :
+- Ticket #: Ticket number assigned to each complaint
+- Customer Complaint: Description of complaint
+- Date: Date of complaint
+- Time: Time of complaint
+- Received Via: Mode of communication of the complaint 
+- City: Customer city
+- State: Customer state
+- Zipcode: Customer zip
+- Status: Status of complaint
+- Filing on behalf of someone
+- Analysis Task
 
-Perform a service request data analysis of New York City 311 calls. You will focus on the data wrangling techniques to understand the pattern in the data and also visualize the major complaint types.
-Domain: Customer Service
+To perform these tasks, you can use any of the different Python libraries such as NumPy, SciPy, Pandas, scikit-learn, matplotlib, and BeautifulSoup.
 
-Analysis Tasks to be performed:
+- Import data into Python environment.
+- Provide the trend chart for the number of complaints at monthly and daily granularity levels.
+- Provide a table with the frequency of complaint types.
 
-(Perform a service request data analysis of New York City 311 calls) 
+Which complaint types are maximum i.e., around internet, network issues, or across any other domains.
+- Create a new categorical variable with value as Open and Closed. Open & Pending is to be categorized as Open and Closed & Solved is to be categorized as Closed.
+- Provide state wise status of complaints in a stacked bar chart. Use the categorized variable from Q3. Provide insights on:
 
-Import a 311 NYC service request.
-Read or convert the columns ‘Created Date’ and Closed Date’ to datetime datatype and create a new column ‘Request_Closing_Time’ as the time elapsed between request creation and request closing. (Hint: Explore the package/module datetime)
-Provide major insights/patterns that you can offer in a visual format (graphs or tables); at least 4 major conclusions that you can come up with after generic data mining.
-Order the complaint types based on the average ‘Request_Closing_Time’, grouping them for different locations.
-Perform a statistical test for the following:
-Please note: For the below statements you need to state the Null and Alternate and then provide a statistical test to accept or reject the Null Hypothesis along with the corresponding ‘p-value’.
+Which state has the maximum complaints?
+Which state has the highest percentage of unresolved complaints?
 
-Whether the average response time across complaint types is similar or not (overall)
-Are the type of complaint or service requested and location related?
+- Provide the percentage of complaints resolved till date, which were received through the Internet and customer care calls.
